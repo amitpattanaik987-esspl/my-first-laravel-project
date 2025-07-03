@@ -5,7 +5,6 @@
         @if($posts->count())
         <x-post-grid :posts="$posts" />
 
-        <!--php artisan vendor:publish --tag=laravel-pagination by this all the css will import-->
         {{$posts->links()}}
         @else
         <p class="test-center">NO POSTS TO BE SHOWN</p>
